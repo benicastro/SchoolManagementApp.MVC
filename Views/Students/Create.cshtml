@@ -24,12 +24,12 @@
             <br>
             <div class="form-group">
                 <label asp-for="DataOfBirth" class="control-label">Date of Birth</label>
-                <input asp-for="DataOfBirth" class="form-control" />
+                <input type="date" asp-for="DataOfBirth" class="form-control" />
                 <span asp-validation-for="DataOfBirth" class="text-danger"></span>
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary"/>
+                <input type="submit" value="Add" class="btn btn-success"/>
                 <a class="btn btn-dark" asp-action="Index">Back to List</a>
             </div>
         </form>

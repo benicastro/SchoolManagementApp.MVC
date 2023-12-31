@@ -49,6 +49,7 @@
 @section Scripts{
     <script>
         $(function(){
+            new DataTable('.table');
             $('.deleteBtn').click(function(e){
                 Swal.fire({
                     title: "Are you sure?",
@@ -60,11 +61,11 @@
                     confirmButtonText: "Yes, delete it!"
                     }).then((result) => {
                         if (result.isConfirmed){
-                            Swal.fire({
+                            @* Swal.fire({
                             title: "Deleted!",
                             text: "Your file has been deleted.",
                             icon: "success",
-                            });
+                            }); *@
                             var btn = $(this);
                             var id = btn.data("id");
                             $('#courseId').val(id);
